@@ -1,15 +1,15 @@
 package ru.synergy.CustomGenericTypes;
 
-public class Account {
-    private int id;
+public class Account <T> {
+    private T id;
     private int sum;
 
-    public Account(String id, int sum) {
+    public Account(T id, int sum) {
         this.id = id;
         this.sum = sum;
     }
 
-    public int getId() {
+    public T getId() {
         return id;
     }
 
@@ -17,7 +17,7 @@ public class Account {
         return sum;
     }
 
-    public void setId(int id) {
+    public void setId(T id) {
         this.id = id;
     }
 
