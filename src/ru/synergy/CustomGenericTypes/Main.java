@@ -13,7 +13,8 @@ public class Main {
 
         System.out.println(acc2.getId());
 
-      //  int a = ((Integer) acc1.getId()) + 10;  // Опасное преобразование типов
+        int a = ((Integer) acc1.getId()) + 10;  // Опасное преобразование типов
+        System.out.println(a);
 
 
 

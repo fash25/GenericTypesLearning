@@ -1,6 +1,6 @@
 package ru.synergy.CustomGenericTypes;
 
-public class Account <T> {
+public class Account<T> implements Accauntable<T> {
     private T id;
     private int sum;
 
