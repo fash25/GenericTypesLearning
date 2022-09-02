@@ -3,6 +3,13 @@ package ru.synergy.CustomGenericTypes;
 public class Account<T> implements Accauntable<T> {
     private T id;
     private int sum;
+    private Object sath;
+
+    <S> Account(T id,int sum, S sath) {
+        this(id, sum );
+        this.sath = sath;
+
+    }
 
     public Account(T id, int sum) {
         this.id = id;

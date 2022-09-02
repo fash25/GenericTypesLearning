@@ -17,6 +17,10 @@ public class Main {
         System.out.println(a);
 
 
+        Account<Integer> acc3 = new Account( 13000, 1000, "Something");
+
+
+
 
     }
 }
