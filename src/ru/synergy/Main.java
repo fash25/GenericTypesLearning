@@ -1,5 +1,6 @@
 package ru.synergy;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -28,6 +29,20 @@ public class Main {
                 System.out.println(s);
             }
         }
+
+        ArrayList numbers = new ArrayList();  // сохраняет Object
+
+        for(int i = 0; i < 10; i++)
+        {  //  сохранять в коллекцию числа 10,20,....100
+             numbers.add( i*10 );
+//             numbers.add( i*10.4f );
+        }
+        int sum = 0;
+        for (Object o: numbers){
+            sum = sum + (Integer) o;
+
+        }
+        System.out.println(sum);
 
 
     }
