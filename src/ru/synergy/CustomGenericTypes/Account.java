@@ -4,7 +4,7 @@ public class Account {
     private int id;
     private int sum;
 
-    public Account(int id, int sum) {
+    public Account(String id, int sum) {
         this.id = id;
         this.sum = sum;
     }
