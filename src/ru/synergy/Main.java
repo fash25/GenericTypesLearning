@@ -1,6 +1,7 @@
 package ru.synergy;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class Main {
@@ -69,9 +70,37 @@ public class Main {
         }
         System.out.println(sum);
 
-        // Основной тип <тип параметр>
+        // ОсновнойТип <ТипПараметр>
+        // ОсновнойТип <ТипПараметр1, ТипПараметр2,ТипПараметр3,ТипПараметр4.... >
 
+        HashMap<Integer, String> map = new HashMap<Integer, String>();
+        map.put(7,"Hai");
+        map.put( 15,"Buy-buy" );
 
+        ArrayList<String> listBuyBuy = new ArrayList<>();
+        listBuyBuy.add( "Buy-buy" );
+        listBuyBuy.add( "Hi" );
+
+        ArrayList<String> listHi = new ArrayList<>();
+        listHi.add( "Hi-Hi" );
+        listHi.add( "Babun" );
+
+        ArrayList<ArrayList<String>> list = new ArrayList<>();
+        list.add( listBuyBuy );
+        list.add( listHi );
+
+        for (ArrayList<String> spisok : list){
+            for (String s : spisok){
+                System.out.println(s);
+            }
+        }
     }
 }
+/*
+*     то что делаем мы в коде                           то во что преобразует компилятор
+* ArrayList<Integer> list = new ArrayList<Integer>();  ArrayList list = new ArrayList()
+* list.add(1);
+* int x = list.get(0);                                 int x = (Integer) list.get(0);
+* list.set(0,10);                                      list.set(0,(Integer) 10);
 
+*/
